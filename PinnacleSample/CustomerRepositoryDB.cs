@@ -1,10 +1,12 @@
 ﻿using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Threading.Tasks;
 
 namespace PinnacleSample
 {
-    public class CustomerRepositoryDB
+    //Implement from ICustomerRepositoryDB contract
+    public class CustomerRepositoryDB : ICustomerRepositoryDB
     {
         public Customer GetByName(string name)
         {

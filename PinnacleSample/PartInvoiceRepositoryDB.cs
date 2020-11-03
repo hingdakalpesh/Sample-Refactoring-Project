@@ -1,10 +1,12 @@
 ﻿using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Threading.Tasks;
 
 namespace PinnacleSample
 {
-    public class PartInvoiceRepositoryDB
+    //Implement from IPartInvoiceRepositoryDB contract 
+    public class PartInvoiceRepositoryDB : IPartInvoiceRepositoryDB
     {
         public void Add(PartInvoice invoice)
         {
